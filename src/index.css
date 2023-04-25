@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/Inter-VariableFont.ttf');
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+.scrollbar-fix::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollbar-fix::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scrollbar-fix::-webkit-scrollbar-corner {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.scrollbar-fix::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    outline: none;
+}
+
+.cm-scroller {
+    overflow-x: visible !important;
+}
+
+.cm-editor {
+    background-color: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
